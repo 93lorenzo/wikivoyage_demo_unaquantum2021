@@ -1,7 +1,5 @@
 import pywikibot
-import pandas as pd
 import json
-import time
 import pprint
 
 """                                                                                   

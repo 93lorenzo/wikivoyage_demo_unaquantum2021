@@ -2,28 +2,7 @@ import pywikibot
 import json
 import pprint
 
-"""                                                                                   
-Templates with params returns a list of pairs.                                        
-The first is the template description (ex. See), the second one is a list of elements 
-[[wikivoyage:it:Template:See]]                                                        
-['alt=MUDECU', 'descrizione=Muse     ...                                              
-"""
-"""The family tells pywikibot which type of mediawiki site should be used, and it can read and write data specific to the family. Examples of family are: wikipedia, wikitionary, wikisource, etc.
-
-The code tells pywikibot which variant of the family should be used. Common examples of codes are: en, es, ml, etc. The code depends on the family though. For example, the "commons" family has only the "commons" code.
-"""
-
-"""
-A category is a special namespace (Similar to the user space) which holds categories that are used to classify pages.
-For example the "Python (programming language)" page on wikipedia has the categories "Category:Class-based programming languages", 
-"Category:Cross-platform free software", "Category:Dynamically typed programming languages" and so on.
-To add a category to a page, a link to the category must be added to the medaiwiki page.
-Hence, something like [[Category:<name of category>]] should be added according to the wiki markup.
-A template is a snippet of text which can be included into multiple other pages (Something like a #include or import). The wiki markup to add a template is {{<template name>}} and it can also take in arguments, for example {{<template name>|arg1|arg2}}.
-"""
-
 # chose on which site we will scrape
-
 wikivoyage_bot = pywikibot.Site('wikivoyage:it')
 
 list_of_places = ['Riofreddo','Roviano']
